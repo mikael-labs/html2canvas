@@ -62,9 +62,12 @@ export class Parser {
 
         do {
             token = this.consumeToken();
-        } while (token.type === TokenType.WHITESPACE_TOKEN);
-
-        if (token.type === TokenType.EOF_TOKEN) {
+						console.log(token);
+					} while (token.type === TokenType.WHITESPACE_TOKEN);
+					
+					console.log(token);
+					
+					if (token.type === TokenType.EOF_TOKEN) {
             return value;
         }
 
